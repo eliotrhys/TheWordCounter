@@ -6,11 +6,11 @@ package com.example.eliotshort.thewordcounter;
 
 public class WordCounter {
 
-    public static int countWordsUsingSplit(String input) {
-        if (input == null || input.isEmpty())
-        { return 0; }
+    public static String countWordsUsingSplit(String input) {
 
         String[] words = input.split("\\s+");
-        return words.length; }
+        int theLength = words.length;
+        return "The number of words is " + theLength;
+    }
 
 }

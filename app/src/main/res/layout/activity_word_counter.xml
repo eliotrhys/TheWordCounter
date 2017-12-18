@@ -7,7 +7,7 @@
     tools:context="com.example.eliotshort.thewordcounter.word_counter">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/phrase_box"
         android:layout_width="277dp"
         android:layout_height="82dp"
         android:layout_marginBottom="8dp"
@@ -25,34 +25,34 @@
         app:layout_constraintVertical_bias="0.091" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calculate_button"
         android:layout_width="169dp"
         android:layout_height="96dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="onCalculateButtonClicked"
         android:text="@string/calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/phrase_box"
         app:layout_constraintVertical_bias="0.084" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/reveal_box"
         android:layout_width="276dp"
         android:layout_height="146dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
         android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
 </android.support.constraint.ConstraintLayout>
