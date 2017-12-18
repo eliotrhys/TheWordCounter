@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@android:color/holo_blue_light"
     tools:context="com.example.eliotshort.thewordcounter.word_counter">
 
     <EditText
@@ -17,6 +18,7 @@
         android:ems="10"
         android:hint="@string/hint_text"
         android:inputType="textPersonName"
+        android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -32,8 +34,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:onClick="onCalculateButtonClicked"
         android:text="@string/calculate"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -51,6 +57,7 @@
         android:layout_marginTop="8dp"
         android:textAlignment="center"
         android:textSize="36sp"
+        android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
